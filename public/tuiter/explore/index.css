@@ -8,10 +8,50 @@ body {
     color: white;
     border-radius: 10px;
     margin-right: 12px;
+    margin-left: 16px;
+    width: 520px;
+
+}
+
+
+
+.wd-gear {
+   float: right;
+    margin-right: 12px;
+}
+
+.wd-hr {
+    background-color: darkgray;
+    margin-left: 16px;
+    height: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+
 }
 
 .wd-link-highlighted {
     color: rgb(29, 161, 242);
+    margin-left: 16px;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+    text-decoration: none;
+
+
+
+
+}
+
+
+
+.wd-bordertop {
+    border: 1px solid rgb(110, 118, 125);
+    margin-left: 16px;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
 
 }
 
@@ -20,6 +60,9 @@ body {
     color: rgb(110, 118, 125);
     padding: 16px;
     font-size: 15px;
+    margin-left: 16px;
+    text-decoration: none;
+    overflow: auto;
 }
 
 input::placeholder {
@@ -29,6 +72,7 @@ input::placeholder {
 .wd-suggested {
     border: 1px solid rgb(110, 118, 125);
     overflow: auto;
+    margin-left: 16px;
 }
 
 .wd-suggested p {
