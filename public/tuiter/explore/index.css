@@ -1,102 +1,13 @@
-body {
-    background-color: black;
-    margin-left: 16px;
+.wd-icon-blue {
+    color: #0d6efd;
 }
 
-.wd-search {
-    background-color: darkgray;
-    color: white;
-    border-radius: 10px;
-    margin-right: 12px;
-    margin-left: 16px;
-    width: 520px;
-
+.wd-nasa {
+    position: relative;
 }
 
-
-
-.wd-gear {
-   float: right;
-    margin-right: 12px;
-}
-
-.wd-hr {
-    background-color: darkgray;
-    margin-left: 16px;
-    height: 12px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-
-}
-
-.wd-link-highlighted {
-    color: rgb(29, 161, 242);
-    margin-left: 16px;
-    padding-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
-    width: fit-content;
-    text-decoration: none;
-
-
-
-
-}
-
-
-
-.wd-bordertop {
-    border: 1px solid rgb(110, 118, 125);
-    margin-left: 16px;
-    padding-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
-
-}
-
-
-.wd-link {
-    color: rgb(110, 118, 125);
-    padding: 16px;
-    font-size: 15px;
-    margin-left: 16px;
-    text-decoration: none;
-    overflow: auto;
-}
-
-input::placeholder {
-    color: gray;
-}
-
-.wd-suggested {
-    border: 1px solid rgb(110, 118, 125);
-    overflow: auto;
-    margin-left: 16px;
-}
-
-.wd-suggested p {
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.wd-suggested-sub {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
-
-.wd-suggested-title {
-    color: white;
-    font-size: 16px;
-}
-
-.wd-suggested-img {
-    float: right;
-    border-radius: 10px;
-    margin-right: 16px;
-}
-
-.wd-author {
-    color: white;
-    font-size: 13px;
+.wd-nasa-text {
+    position: absolute;
+    top: 310px;
+    left: 10px;
 }
