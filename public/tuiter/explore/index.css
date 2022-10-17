@@ -11,3 +11,7 @@
     top: 310px;
     left: 10px;
 }
+
+.list-group-item {
+    color: white;
+}
