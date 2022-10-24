@@ -1,4 +1,5 @@
 import PostSummaryList from "../post-summary-list/index.js";
+import "./index.css"
 
 const ExploreComponent = () => {
     return (
@@ -30,8 +31,9 @@ const ExploreComponent = () => {
                 </li>
             </ul>
 
-            <div className="wd-nasa">
-                <img className="w-100" src="../../images/relativity.jpg" />
+            < div className="wd-nasa">
+
+                <img className="w-100" src="../../images/relativity.jpg" alt='nasa' />
                 <h1 className="wd-nasa-text text-white">SpaceX's Starship</h1>
             </div>
 

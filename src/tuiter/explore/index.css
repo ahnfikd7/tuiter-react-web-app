@@ -1,0 +1,17 @@
+.wd-icon-blue {
+    color: #0d6efd;
+}
+
+.wd-nasa {
+    position: relative;
+}
+
+.wd-nasa-text {
+    position: absolute;
+    top: 310px;
+    left: 10px;
+}
+
+.list-group-item {
+    color: white;
+}
