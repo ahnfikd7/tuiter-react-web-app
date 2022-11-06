@@ -1,7 +1,6 @@
 import React from "react";
 
-import NavigationSidebar from "../navigation-sidebar/index.js";
-import PostSummaryList from "../post-summary-list/index.js";
+
 import WhatsHappening from "./whats-happening.js";
 import TuitsList from "../TuitsList/index.js";
 
