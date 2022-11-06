@@ -7,6 +7,7 @@ import './App.css';
 import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter/index.js";
+
 import {BrowserRouter} from "react-router-dom"; //navigate between multiple components
 import {Routes, Route} from "react-router"; //specifying a path
 
@@ -17,16 +18,19 @@ function App() {
 
   return (
       <BrowserRouter>
+
       <div className="container">
          <Routes>
-      <Route index
+      <Route path={"/*"}
       element={ <Labs/>} />
 
                       <Route path={"/hello"}
                              element={ <HelloWorld/>} />
 
-                              <Route path={"/tuiter"}
+                              <Route path={"/tuiter/*"}
                                      element={ <Tuiter/>} />
+
+
 
          </Routes>
 

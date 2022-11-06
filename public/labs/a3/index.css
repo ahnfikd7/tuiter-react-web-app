@@ -3,6 +3,14 @@
 /*    color: white;*/
 /*}*/
 
+
+
+
+
+
+
+
+
 p#id-selector-1 {
     background-color: red;
     color: white;
@@ -89,6 +97,12 @@ p#id-selector-2 {
     margin: 30px;
 }
 
+.rounded-corners-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
 .rounded-corners-bottom {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -119,8 +133,8 @@ p#id-selector-2 {
 
 .pos-relative-nudge-up-right {
     position: relative;
-    bottom: 130px;
-    left: 130px;
+    bottom: 30px;
+    left: 30px;
 }
 .pos-relative-nudge-down-right {
     position: relative;

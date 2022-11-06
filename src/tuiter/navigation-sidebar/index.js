@@ -1,56 +1,64 @@
-import React from "react";
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }) => {
-    return (
-        <div className= "list-group">
+import React from 'react';
+import { Link } from 'react-router-dom';
+import {useLocation} from "react-router";
 
-                <a className="list-group-item" href="/">
+
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2];
+
+    return (
+        <>
+            <div className="list-group">
+                <Link className="list-group-item" to="/">
                     <i className="fab fa-twitter"></i>
-                </a>
-                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="/">
-                    <i className="fas fa-home"></i>
-                    <span className="d-none d-xl-inline"> Home</span>
-                </a>
-                <a className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="/">
-                    <i className="fas fa-hashtag"></i>
-                    <span className="d-none d-xl-inline"> Explore</span>
-                </a>
-                <a className={`list-group-item ${active === 'notifications' ? 'active' : ''}`} href="/">
+                </Link>
+                <Link to="/tuiter" className={`list-group-item ${!active?'active':''}`}>
+                    <i className="bi bi-house-door-fill me-2"></i>
+                    Home
+                </Link>
+                <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
+                    <i className="bi bi-hash me-2"></i>
+                    Explore
+                </Link>
+                <Link to="/" className="list-group-item">
+                    <i className="bi bi-asterisk me-2"></i>
+                    Labs
+                </Link>
+                <Link className={`list-group-item ${active === 'notifications' ? 'active' : ''}`} to="/a7/tuiter/notifications">
                     <i className="fas fa-bell"></i>
                     <span className="d-none d-xl-inline"> Notifications</span>
-                </a>
-                <a className={`list-group-item ${active === 'messages' ? 'active' : ''}`} href="/">
+                </Link>
+                <Link className={`list-group-item ${active === 'messages' ? 'active' : ''}`} to="/a7/tuiter/messages">
                     <i className="fas fa-envelope"></i>
                     <span className="d-none d-xl-inline"> Messages</span>
-                </a>
-                <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="/">
+                </Link>
+                <Link className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} to="/a7/tuiter/bookmarks">
                     <i className="fas fa-bookmark"></i>
                     <span className="d-none d-xl-inline"> Bookmarks</span>
-                </a>
-                <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="/">
+                </Link>
+                <Link className={`list-group-item ${active === 'lists' ? 'active' : ''}`} to="/a7/tuiter/lists">
                     <i className="fas fa-list"></i>
                     <span className="d-none d-xl-inline"> Lists</span>
-                </a>
-                <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="/">
+                </Link>
+                <Link className={`list-group-item ${active === 'profile' ? 'active' : ''}`} to="/a7/tuiter/profile">
                     <i className="fas fa-user"></i>
                     <span className="d-none d-xl-inline"> Profile</span>
-                </a>
-                <a className={`list-group-item ${active === 'more' ? 'active' : ''}`} href="/">
+                </Link>
+                <Link className={`list-group-item ${active === 'more' ? 'active' : ''}`} to="/a7/tuiter/more">
                     <i className="fas fa-ellipsis-h"></i>
                     <span className="d-none d-xl-inline"> More</span>
-                </a>
-
+                </Link>
+            </div>
             <div className="d-grid mt-2">
-                <a href=".././tuit.html"
-                   className="btn btn-primary btn-block rounded-pill">
+                <Link to=".././tuit.html"
+                      className="btn btn-primary btn-block rounded-pill">
                     Tweet
-                </a>
+                </Link>
             </div>
-            </div>
-
-
+        </>
     )
 };
+
 export default NavigationSidebar;

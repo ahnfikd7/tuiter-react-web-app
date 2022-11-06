@@ -4,6 +4,7 @@ alert('Hello World!');
 
 
 
+const ewq = ['qu','wf','eh','iu','tb']
 
 console.log('Hello World!');
 
@@ -290,6 +291,7 @@ const init = () => {
     showBtn.click(showHandler);
 
    // $("h1").append(" World!")
+
 
 
 
