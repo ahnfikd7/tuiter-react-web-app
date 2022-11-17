@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from "react";
-import {createTuit} from "../reducers/tuits-reducer";
+//import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks.js"
 import {useDispatch} from "react-redux";
 
 
@@ -12,7 +13,7 @@ const WhatsHappening = () => {
             tuit: whatsHappening
             
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
 
     }
 
