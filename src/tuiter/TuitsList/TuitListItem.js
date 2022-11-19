@@ -4,7 +4,7 @@ import TuitStats from "./TuitStats.js";
 import { useDispatch } from "react-redux";
 //import {deleteTuit} from "../reducers/tuits-reducer";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
-
+import java from "../../images/java.png"
 
 const TuitListItem = ({tuit }) => {
     const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const TuitListItem = ({tuit }) => {
                 <tr>
                     <td className="align-text-top">
                         <img className="rounded-circle wd-avatar-image"
-                             src={tuit['logo-image']}
+                             src={java}
                              alt='icon' />
                     </td>
                     <td className="ps-3" style={{ width: '100%' }}>
